@@ -1,0 +1,186 @@
+{
+  "common": {
+    "home": "Home",
+    "blog": "Blog",
+    "magazine": "Magazine",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "search": "Search",
+    "loading": "Loading...",
+    "seeMore": "See More",
+    "viewMore": "View More Results",
+    "readMore": "Read More",
+    "goToMagazine": "Visit Magazine",
+    "getApp": "Get FemoLife App",
+    "downloadApp": "Download App",
+    "homePage": "Home Page",
+    "noResults": "No results found for {searchKey}",
+    "notFound": "Not Found",
+    "error": "Error",
+    "resultsFound": "{count} results found",
+    "searchResults": "Search Results",
+    "share": "Share",
+    "rating": "Rating",
+    "comment": "Comment",
+    "admin": "Admin",
+    "selectLanguage": "Language",
+    "copyright": "Copyright © 2018 - 2025 All rights reserved by",
+    "appName": "FemoLife App",
+    "siteName": "FemoLife",
+    "relatedArticles": "Related articles in",
+    "youMightLike": "You might also like"
+  },
+  "header": {
+    "homeLink": "Home - FemoLife",
+    "logoAlt": "FemoLife - Women's Health Guide, Pregnancy & Childbirth",
+    "openSearch": "Open search box",
+    "mainNav": "Main navigation"
+  },
+  "hero": {
+    "firstApp": "The First App",
+    "everyWoman": "Every Woman's",
+    "health": "Health",
+    "installCount": "App install count"
+  },
+  "features": {
+    "periodTitle": "What do we have for you during your <mark>menstrual period</mark>?",
+    "pregnancyTitle": "What do we have for you during <mark>pregnancy</mark>?",
+    "breastfeedingTitle": "What do we have for you during <mark>breastfeeding</mark>?"
+  },
+  "testimonials": {
+    "title": "Your kind words about",
+    "nextSlide": "Next slide",
+    "prevSlide": "Previous slide"
+  },
+  "therapyClinic": {
+    "expertTeam": "FemoLife Expert Team",
+    "readyToHelp": "Ready to consult and answer all your questions"
+  },
+  "seeMoreSection": {
+    "inviteText": "We invite you to explore sections of FemoLife"
+  },
+  "lastedArticles": {
+    "visitMagazine": "Visit the Magazine"
+  },
+  "fixedAppBar": {
+    "oneStep": "One step to positive change!",
+    "installNow": "Install Now"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions"
+  },
+  "notFoundPage": {
+    "error404": "Error 404",
+    "notHere": "What you were looking for is not here!",
+    "description": "It may have been moved, but no worries — we have plenty of interesting content for you.",
+    "goMagazine": "Go to Magazine",
+    "goHome": "Home Page"
+  },
+  "errorPage": {
+    "error500": "Error 500",
+    "maintenance": "Under Maintenance & Upgrades...",
+    "description": "Something wasn't working properly behind the scenes. We're fixing it! Please check back in a few minutes.",
+    "goHome": "Home Page"
+  },
+  "contactForm": {
+    "contactFormTitle": "Contact Form",
+    "namePlaceholder": "Name",
+    "nameRequired": "Please enter your name",
+    "phonePlaceholder": "Phone number",
+    "phoneRequired": "Please enter your phone number",
+    "messagePlaceholder": "Message",
+    "messageRequired": "Please enter your message",
+    "submitMessage": "Send Message",
+    "submitting": "Sending...",
+    "messageSuccess": "Your message was sent successfully!",
+    "messageError": "Failed to send message. Please try again.",
+    "title": "Contact Us",
+    "subtitle": "We would love to hear from you",
+    "name": "Name",
+    "phone": "Phone",
+    "opinion": "Message",
+    "submit": "Send"
+  },
+  "commentSection": {
+    "writeComment": "Share your thoughts with us",
+    "otherComments": "Other comments",
+    "commentPlaceholder": "Your comment",
+    "commentRequired": "Please enter your comment",
+    "namePlaceholder": "Name",
+    "nameRequired": "Please enter your name",
+    "emailPlaceholder": "Email",
+    "emailRequired": "Please enter your email",
+    "emailInvalid": "Please enter a valid email",
+    "rememberMe": "Remember my info for next time",
+    "submitComment": "Submit Comment",
+    "submitting": "Submitting...",
+    "commentSuccess": "Your comment was submitted successfully!",
+    "commentError": "Failed to submit comment. Please try again.",
+    "userAvatar": "User avatar",
+    "adminAvatar": "Admin avatar",
+    "admin": "Admin",
+    "title": "Comments",
+    "othersComments": "Other comments",
+    "saveInfo": "Save my info"
+  },
+  "rate": {
+    "bad": "Bad",
+    "notBad": "Not bad",
+    "good": "Good",
+    "veryGood": "Very good",
+    "excellent": "Excellent",
+    "rateTitle": "How was this article?",
+    "rateSuccess": "Thank you for your rating!",
+    "rateError": "Failed to submit rating. Please try again."
+  },
+  "searchPage": {
+    "searchPlaceholder": "Search in magazine",
+    "resultsCount": "{count} results found for your search",
+    "mayInterest": "You might find these interesting"
+  },
+  "blogPage": {
+    "chooseCategory": "Choose",
+    "latestArticles": "Latest Women's Health Articles",
+    "errorLoading": "Error loading articles. Please try again.",
+    "readTime": "min read",
+    "author": "Author",
+    "views": "views",
+    "allCategories": "All"
+  },
+  "aboutPage": {
+    "mostPopular": "The Most Popular",
+    "womenHealthApp": "Women's Health App",
+    "monthlyActiveUsers": "Monthly Active Users",
+    "downloads": "Total Downloads",
+    "startYear": "Year Founded"
+  },
+  "authorPage": {
+    "authorPosts": "Author's Articles",
+    "nutritionExpert": "Nutrition Expert"
+  },
+  "doctorPage": {
+    "experts": "FemoLife Experts",
+    "medicalCode": "Medical License No.",
+    "experience": "Professional Experience",
+    "withUs": "With FemoLife",
+    "officePhone": "Office Phone",
+    "skills": "Skills & Background",
+    "officeAddress": "Office Address",
+    "consultation": "Get Consultation",
+    "noExperts": "No experts found in this category",
+    "relatedExperts": "Related Experts"
+  },
+  "categoryPage": {
+    "latestArticlesIn": "Latest articles in {category}"
+  },
+  "footer": {
+    "enamadTitle": "Electronic Trust Badge"
+  },
+  "seo": {
+    "defaultTitle": "FemoLife - Women's Health Guide, Pregnancy & Childbirth",
+    "defaultDescription": "FemoLife: Your comprehensive guide to women's health from puberty to pregnancy, childbirth, and maternal wellness. Practical information, important tips, and special products for women.",
+    "defaultKeywords": "women's health, pregnancy, childbirth, puberty, maternal health, women's guide, women's products",
+    "siteName": "FemoLife",
+    "ogAlt": "FemoLife - Women's Health Guide"
+  }
+}

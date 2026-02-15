@@ -1,0 +1,186 @@
+{
+  "common": {
+    "home": "الرئيسية",
+    "blog": "المدونة",
+    "magazine": "المجلة",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "search": "بحث",
+    "loading": "جارٍ التحميل...",
+    "seeMore": "عرض المزيد",
+    "viewMore": "عرض المزيد من النتائج",
+    "readMore": "اقرأ المزيد",
+    "goToMagazine": "زيارة المجلة",
+    "getApp": "تحميل تطبيق فيمولايف",
+    "downloadApp": "تحميل التطبيق",
+    "homePage": "الصفحة الرئيسية",
+    "noResults": "لم يتم العثور على نتائج لـ {searchKey}",
+    "notFound": "غير موجود",
+    "error": "خطأ",
+    "resultsFound": "تم العثور على {count} نتيجة",
+    "searchResults": "نتائج البحث",
+    "share": "مشاركة",
+    "rating": "تقييم",
+    "comment": "تعليق",
+    "admin": "المشرف",
+    "selectLanguage": "اللغة",
+    "copyright": "حقوق النشر © ٢٠١٨ - ٢٠٢٥ جميع الحقوق محفوظة لـ",
+    "appName": "تطبيق فيمولايف",
+    "siteName": "فيمولايف",
+    "relatedArticles": "مقالات ذات صلة في",
+    "youMightLike": "قد يعجبك أيضاً"
+  },
+  "header": {
+    "homeLink": "الرئيسية - فيمولايف",
+    "logoAlt": "فيمولايف - دليل صحة المرأة والحمل والولادة",
+    "openSearch": "فتح مربع البحث",
+    "mainNav": "التنقل الرئيسي"
+  },
+  "hero": {
+    "firstApp": "التطبيق الأول",
+    "everyWoman": "لصحة كل",
+    "health": "امرأة",
+    "installCount": "عدد تحميلات التطبيق"
+  },
+  "features": {
+    "periodTitle": "ماذا نقدم لكِ خلال <mark>فترة الدورة الشهرية</mark>؟",
+    "pregnancyTitle": "ماذا نقدم لكِ خلال <mark>فترة الحمل</mark>؟",
+    "breastfeedingTitle": "ماذا نقدم لكِ خلال <mark>فترة الرضاعة</mark>؟"
+  },
+  "testimonials": {
+    "title": "كلماتكم الجميلة عن",
+    "nextSlide": "الشريحة التالية",
+    "prevSlide": "الشريحة السابقة"
+  },
+  "therapyClinic": {
+    "expertTeam": "فريق خبراء فيمولايف",
+    "readyToHelp": "مستعدون للاستشارة والإجابة على جميع أسئلتك"
+  },
+  "seeMoreSection": {
+    "inviteText": "ندعوكِ لاستكشاف أقسام فيمولايف"
+  },
+  "lastedArticles": {
+    "visitMagazine": "زيارة المجلة"
+  },
+  "fixedAppBar": {
+    "oneStep": "خطوة واحدة نحو التغيير الإيجابي!",
+    "installNow": "حمّلي الآن"
+  },
+  "faq": {
+    "title": "الأسئلة الشائعة"
+  },
+  "notFoundPage": {
+    "error404": "خطأ ٤٠٤",
+    "notHere": "ما كنتِ تبحثين عنه ليس هنا!",
+    "description": "ربما تم نقله، لكن لا تقلقي — لدينا الكثير من المحتوى المثير لكِ.",
+    "goMagazine": "الذهاب إلى المجلة",
+    "goHome": "الصفحة الرئيسية"
+  },
+  "errorPage": {
+    "error500": "خطأ ٥٠٠",
+    "maintenance": "جارٍ الصيانة والتحديثات...",
+    "description": "حدث خلل ما خلف الكواليس، نحن نعمل على إصلاحه! يرجى المحاولة بعد بضع دقائق.",
+    "goHome": "الصفحة الرئيسية"
+  },
+  "contactForm": {
+    "contactFormTitle": "نموذج الاتصال",
+    "namePlaceholder": "الاسم",
+    "nameRequired": "يرجى إدخال اسمك",
+    "phonePlaceholder": "رقم الهاتف",
+    "phoneRequired": "يرجى إدخال رقم هاتفك",
+    "messagePlaceholder": "الرسالة",
+    "messageRequired": "يرجى إدخال رسالتك",
+    "submitMessage": "إرسال الرسالة",
+    "submitting": "جارٍ الإرسال...",
+    "messageSuccess": "تم إرسال رسالتك بنجاح!",
+    "messageError": "فشل في إرسال الرسالة. يرجى المحاولة مرة أخرى.",
+    "title": "اتصل بنا",
+    "subtitle": "يسعدنا سماع رأيك",
+    "name": "الاسم",
+    "phone": "الهاتف",
+    "opinion": "الرسالة",
+    "submit": "إرسال"
+  },
+  "commentSection": {
+    "writeComment": "شاركنا رأيك",
+    "otherComments": "تعليقات الآخرين",
+    "commentPlaceholder": "تعليقك",
+    "commentRequired": "يرجى إدخال تعليقك",
+    "namePlaceholder": "الاسم",
+    "nameRequired": "يرجى إدخال اسمك",
+    "emailPlaceholder": "البريد الإلكتروني",
+    "emailRequired": "يرجى إدخال بريدك الإلكتروني",
+    "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح",
+    "rememberMe": "تذكر معلوماتي للمرة القادمة",
+    "submitComment": "إرسال التعليق",
+    "submitting": "جارٍ الإرسال...",
+    "commentSuccess": "تم إرسال تعليقك بنجاح!",
+    "commentError": "فشل في إرسال التعليق. يرجى المحاولة مرة أخرى.",
+    "userAvatar": "صورة المستخدم",
+    "adminAvatar": "صورة المشرف",
+    "admin": "المشرف",
+    "title": "التعليقات",
+    "othersComments": "تعليقات الآخرين",
+    "saveInfo": "حفظ معلوماتي"
+  },
+  "rate": {
+    "bad": "سيئ",
+    "notBad": "ليس سيئاً",
+    "good": "جيد",
+    "veryGood": "جيد جداً",
+    "excellent": "ممتاز",
+    "rateTitle": "كيف كان هذا المقال؟",
+    "rateSuccess": "شكراً لتقييمك!",
+    "rateError": "فشل في إرسال التقييم. يرجى المحاولة مرة أخرى."
+  },
+  "searchPage": {
+    "searchPlaceholder": "البحث في المجلة",
+    "resultsCount": "تم العثور على {count} نتيجة",
+    "mayInterest": "قد يعجبكِ أيضاً"
+  },
+  "blogPage": {
+    "chooseCategory": "اختاري",
+    "latestArticles": "أحدث مقالات صحة المرأة",
+    "errorLoading": "خطأ في تحميل المقالات. يرجى المحاولة مرة أخرى.",
+    "readTime": "دقيقة للقراءة",
+    "author": "الكاتب",
+    "views": "مشاهدة",
+    "allCategories": "الكل"
+  },
+  "aboutPage": {
+    "mostPopular": "الأكثر شعبية",
+    "womenHealthApp": "تطبيق صحة المرأة",
+    "monthlyActiveUsers": "المستخدمون النشطون شهرياً",
+    "downloads": "عدد التحميلات",
+    "startYear": "بداية النشاط"
+  },
+  "authorPage": {
+    "authorPosts": "مقالات الكاتب",
+    "nutritionExpert": "خبير تغذية"
+  },
+  "doctorPage": {
+    "experts": "خبراء فيمولايف",
+    "medicalCode": "رقم الترخيص الطبي",
+    "experience": "الخبرة المهنية",
+    "withUs": "مع فيمولايف",
+    "officePhone": "هاتف العيادة",
+    "skills": "المهارات والخبرات",
+    "officeAddress": "عنوان العيادة",
+    "consultation": "طلب استشارة",
+    "noExperts": "لا يوجد خبراء في هذه الفئة",
+    "relatedExperts": "خبراء ذوو صلة"
+  },
+  "categoryPage": {
+    "latestArticlesIn": "أحدث المقالات في {category}"
+  },
+  "footer": {
+    "enamadTitle": "شارة الثقة الإلكترونية"
+  },
+  "seo": {
+    "defaultTitle": "فيمولايف - دليل صحة المرأة والحمل والولادة",
+    "defaultDescription": "فيمولايف: دليلكِ الشامل لصحة المرأة من البلوغ حتى الحمل والولادة وصحة الأمهات. معلومات عملية ونصائح مهمة ومنتجات خاصة للنساء.",
+    "defaultKeywords": "صحة المرأة, الحمل, الولادة, البلوغ, صحة الأمهات, دليل المرأة, منتجات النساء",
+    "siteName": "فيمولايف",
+    "ogAlt": "فيمولايف - دليل صحة المرأة"
+  }
+}
