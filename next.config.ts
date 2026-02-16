@@ -5,13 +5,13 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   env: {
-    BASE_URL: process.env.BASE_URL || "https://web.yekzan.com/api/v1.0",
+    BASE_URL: process.env.BASE_URL || "https://web.femolife.app/api/v1.0",
   },
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "media.yekzan.com",
+        hostname: "media.femolife.app",
         port: "",
         pathname: "/**",
       },

@@ -37,7 +37,7 @@ function MainHeader({ headerData }: { headerData: HeaderDataType }) {
           </Link>
         </section>
         <NavbarMenu menuItems={headerData?.MenuItems} />
-        <section className="lg:w-[217px] flex items-center justify-end gap-3">
+        <section className="lg:w-[317px] flex items-center justify-end gap-3">
           <LanguageSwitcher />
           <Button type="button" aria-label={t("openSearch")} onClick={handleOpenSearcBox} size="icon" color="primary" variant="text" className={`cursor-pointer rounded-full ${searchBoxOpen ? "!bg-pink-500 text-white" : ""}`}>
             <SearchNormal1 variant="Linear" size={20} color={searchBoxOpen ? "#fff" : "var(--color-pink-500)"} />

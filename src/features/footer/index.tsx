@@ -39,7 +39,7 @@ async function Footer() {
           </p>
           <nav className="flex items-center w-full sm:w-max sm:gap-10">
             <Social instaUrl={footer?.InstagramUrl} youtubeUrl={footer?.YoutubeUrl} />
-            <section className="md:hidden"><EnamadBadge link={footer?.EnamadUrl} img={footer?.EnamadImageUrl} /></section>
+            <section className="md:hidden"></section>
           </nav>
         </section>
       </section>

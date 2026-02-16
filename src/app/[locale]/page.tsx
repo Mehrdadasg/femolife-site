@@ -21,12 +21,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <PregnancyFeatures locale={locale} />
         <BreastfeedingFeatures locale={locale} />
         <Testimonials locale={locale} />
-        <TherapyClinic locale={locale} />
-        <DietPlan locale={locale} />
+       
+        
         <SeeMore locale={locale} />
         <LastedArticles locale={locale} />
       </section>
-      <FAQ locale={locale} />
+    
     </main>
   );
 }
