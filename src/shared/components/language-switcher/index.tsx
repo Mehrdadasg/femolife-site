@@ -1,25 +1,15 @@
 "use client";
 import { useLocale } from "next-intl";
-import { useRouter, usePathname,Link } from "@/i18n/navigation";
-import { routing  } from "@/i18n/routing";
+import { usePathname,Link } from "@/i18n/navigation";
 import { Global } from "iconsax-react";
 import React from "react";
 
-const localeLabels: Record<string, string> = {
-  en: "EN",
-  ar: "عربي",
-};
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
     const nextLocale = locale === "en" ? "ar" : "/";
 
-  const switchLocale = () => {
-    const nextLocale = locale === "en" ? "ar" : "en";
-    router.replace(pathname, { locale: nextLocale });
-  };
 
   return (
     <Link

@@ -5,7 +5,6 @@ import DesktopFooterItem from "./components/DesktopFooterItem";
 import { QueryClient } from "@tanstack/react-query";
 import { ssrFooter } from "../apiHandlers/serverHandlers/ssrFooter";
 import MobileFooterItems from "./components/MobileFooterItems";
-import EnamadBadge from "./components/Enamad";
 import Social from "./components/Social";
 import { getLocale, getTranslations } from "next-intl/server";
 

@@ -24,7 +24,7 @@ function ContactForm() {
   const onSubmit = async (data: FormData) => {
     setLoading(true);
     try {
-      const response = await addMessageFunc({ name: data.name, phone: data.phone, text: data.comment });
+      const response = await addMessageFunc({ Name: data.name, Phone: data.phone, Text: data.comment });
       if (response?.Message?.Status === "Success") {
         toast.success(t("messageSuccess"));
         localStorage.setItem("commentName", data.name);

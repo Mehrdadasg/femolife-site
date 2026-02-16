@@ -23,7 +23,7 @@ function Rate() {
   const handleRate = async (r: { Id: number }) => {
     setRate(r.Id);
     try {
-      const response = await addRateFunc({ slug: blogSlug as string, rate: r.Id });
+      const response = await addRateFunc({ Slug: blogSlug as string, Rate: r.Id });
       if (response?.Message?.Status === "Success") toast.success(t("rateSuccess"));
       else toast.error(t("rateError"));
     } catch (error) { console.error(error); toast.error(t("rateError")); }

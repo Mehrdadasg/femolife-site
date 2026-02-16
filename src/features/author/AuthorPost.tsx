@@ -17,7 +17,7 @@ function AuthorPost({ slug, currentPage }: { slug: string; currentPage: number }
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await blogListFunc({ page: currentPage, author: slug });
+        const response = await blogListFunc({ page: currentPage, authorSlug: slug });
         if (response?.Data?.Items?.length > 0) { setBlogList(response.Data.Items); setTotalCount(response.Data.RecordeCount); }
       } catch (error) { console.error(error); }
     };

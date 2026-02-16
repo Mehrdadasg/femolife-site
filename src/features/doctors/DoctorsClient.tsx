@@ -15,7 +15,7 @@ function DoctorsClient({ expertPageData, expertCategories, expertList }: { exper
 
   const handleFilter = (slug: string) => {
     if (slug === activeCategory) { setActiveCategory(""); setFilteredExperts(expertList); }
-    else { setActiveCategory(slug); setFilteredExperts(expertList.filter((e) => e.CategorySlug === slug)); }
+    else { setActiveCategory(slug); setFilteredExperts(expertList.filter((e) => e.Slug === slug)); }
   };
 
   return (

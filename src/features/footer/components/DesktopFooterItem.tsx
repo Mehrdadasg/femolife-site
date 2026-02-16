@@ -1,13 +1,12 @@
 import { MenuItems } from "@/shared/types/type";
 import Link from "next/link";
 import React from "react";
-import EnamadBadge from "./Enamad";
 import { useTranslations } from "next-intl";
 
 type FooterMenu = { Id: number; Url: string; Title: string };
 type Props = { link: string; img: string; menu: FooterMenu[] };
 
-function DesktopFooterItem({ img, link, menu }: Props) {
+function DesktopFooterItem({  menu }: Props) {
   const t = useTranslations("common");
   const firstColumn = menu?.slice(0, 6);
   const secondColumn = menu?.slice(6);
@@ -22,7 +21,7 @@ function DesktopFooterItem({ img, link, menu }: Props) {
           </div>
         </nav>
       </section>
-      <section className="md:w-1/4 pt-14"><EnamadBadge img={img} link={link} /></section>
+      <section className="md:w-1/4 pt-14"></section>
     </section>
   );
 }

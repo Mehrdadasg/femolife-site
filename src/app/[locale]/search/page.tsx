@@ -9,6 +9,8 @@ import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
+
 
 const pageSize = 10;
 
@@ -28,6 +30,7 @@ function SearchContent() {
   const { mutateAsync: blogListFunc } = useBlogList();
   const { mutateAsync: recommendedListFunc } = useRecommendedList();
   const debounceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const locale = useLocale();
 
   useEffect(() => { setSearchKey(resolvedSearchKey); }, [resolvedSearchKey]);
 
@@ -42,7 +45,7 @@ function SearchContent() {
 
   const handleRecommended = async () => {
     try {
-      const response = await recommendedListFunc();
+      const response = await recommendedListFunc(locale);
       if (response?.Data?.length > 0) setRecommendedList(response.Data); else setRecommendedList([]);
     } catch (error) { console.error("Failed to fetch recommended posts:", error); }
   };

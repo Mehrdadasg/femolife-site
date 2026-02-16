@@ -10,9 +10,8 @@ import { getSeoData } from "@/service/getSeoData";
 import JsonLd from "@/shared/components/json-ld";
 import NextTopLoader from "nextjs-toploader";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getLocale } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import LanguageSwitcher from "@/shared/components/language-switcher";
 import { notFound } from "next/navigation";
 
 const inter = Inter({
@@ -186,7 +185,7 @@ export default async function LocaleLayout({
   try {
     const result = await getSeoData(locale);
     seoData = result?.Data;
-  } catch (e) {
+  } catch {
     seoData = null;
   }
 

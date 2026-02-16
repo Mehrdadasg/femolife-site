@@ -26,7 +26,7 @@ function CommentForm() {
   const onSubmit = async (data: FormData) => {
     setLoading(true);
     try {
-      const response = await addCommentFunc({ slug: blogSlug as string, name: data.name, email: data.email, text: data.comment });
+      const response = await addCommentFunc({ Slug: blogSlug as string, Name: data.name, Email: data.email, Text: data.comment });
       if (response?.Message?.Status === "Success") {
         toast.success(t("commentSuccess"));
         if (data.remember) { localStorage.setItem("commentName", data.name); localStorage.setItem("commentEmail", data.email); }

@@ -5,13 +5,14 @@ import Image from "next/image";
 import React from "react";
 import { useTranslations } from "next-intl";
 
-function ErrorPage() {
+function ErrorPage({ error }: { error: Error & { digest?: string } }) {
   const t = useTranslations("errorPage");
   return (
     <main className="md:h-screen max-w-5xl mx-auto flex flex-wrap md:flex-nowrap px-5 gap-20 pt-36 md:pt-44 lg:pt-52">
       <section className="w-full md:w-[55%] text-center md:text-start">
         <h2 className="rounded-[50px] bg-pink-50 text-pink-500 w-max mx-auto md:mx-0 py-2 px-4 text-lg">
           {t("error500")}
+          {error.message}
         </h2>
         <p className="text-[22px] md:text-2xl lg:text-5xl font-bold lg:leading-20 my-5">
           {t("maintenance")}
