@@ -16,9 +16,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <PeriodFeatures locale={locale} />
         <PregnancyFeatures locale={locale} />
         <BreastfeedingFeatures locale={locale} />
-        
-       
-        
         <SeeMore locale={locale} />
         <LastedArticles locale={locale} />
       </section>
