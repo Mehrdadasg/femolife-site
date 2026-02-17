@@ -19,7 +19,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <SeeMore locale={locale} />
         <LastedArticles locale={locale} />
       </section>
-    
     </main>
   );
 }
