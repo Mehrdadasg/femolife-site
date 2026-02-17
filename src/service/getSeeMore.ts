@@ -1,5 +1,7 @@
+
+import { getValidLocale } from "@/shared/utils/locale";
 export function getSeeMore(locale: string = "en") {
-  return fetch(`${process.env.BASE_URL}/home/seemore`, { headers: { lang: locale } })
+  return fetch(`${process.env.BASE_URL}/home/seemore`, { headers: { lang: getValidLocale(locale )} })
     .then((response) => {
       if (!response.ok) {
         //throw new Error("Network response was not ok");

@@ -1,5 +1,5 @@
 import { BlogListHeaderType, BlogListResponse } from "@/shared/types/type";
-
+import { getValidLocale } from "@/shared/utils/locale";
 export function getBlogList({
   page,
   category,
@@ -11,7 +11,7 @@ export function getBlogList({
     `${process.env.BASE_URL}/content/list?page=${page}&category=${
       category ?? ""
     }&searchKey=${searchKey ?? ""}&authorSlug=${authorSlug ?? ""}`
-  , { headers: { lang: locale } }).then((response) => {
+  , { headers: { lang: getValidLocale(locale) } }).then((response) => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }

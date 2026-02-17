@@ -1,5 +1,6 @@
+import { getValidLocale } from "@/shared/utils/locale";
 export function getExpertCategoriesList(locale: string = "en") {
-  return fetch(`${process.env.BASE_URL}/expert/Categories`, { headers: { lang: locale } }).then((response) => {
+  return fetch(`${process.env.BASE_URL}/expert/Categories`, { headers: { lang: getValidLocale(locale) } }).then((response) => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }

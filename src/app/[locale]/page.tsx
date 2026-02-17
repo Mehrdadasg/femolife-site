@@ -5,7 +5,6 @@ import OurFeatures from "@/features/main/components/OurFeatures";
 import PeriodFeatures from "@/features/main/components/PeriodFeatures";
 import PregnancyFeatures from "@/features/main/components/PregnancyFeatures";
 import SeeMore from "@/features/main/components/SeeMore";
-import Testimonials from "@/features/main/components/Testimonials";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -17,7 +16,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <PeriodFeatures locale={locale} />
         <PregnancyFeatures locale={locale} />
         <BreastfeedingFeatures locale={locale} />
-        <Testimonials locale={locale} />
+        
        
         
         <SeeMore locale={locale} />

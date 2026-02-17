@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
     BASE_URL: process.env.BASE_URL || "https://web.femolife.app/api/v1.0",
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",

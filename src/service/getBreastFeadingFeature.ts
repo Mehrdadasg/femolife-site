@@ -1,5 +1,7 @@
+
+import { getValidLocale } from "@/shared/utils/locale";
 export function getBreastFeadingFeature(locale: string = "en") {
-  return fetch(`${process.env.BASE_URL}/home/features/breastfeeding`, { headers: { lang: locale } })
+  return fetch(`${process.env.BASE_URL}/home/features/breastfeeding`, { headers: { lang: getValidLocale(locale) } })
     .then((response) => {
       if (!response.ok) {
         throw new Error(`API Error [${response.status}] ${response.url}`);

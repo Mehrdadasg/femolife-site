@@ -1,7 +1,9 @@
+
+import { getValidLocale } from "@/shared/utils/locale";
 export function getLastedArticles(locale: string = "en") {
   return fetch(`${process.env.BASE_URL}/home/newcontents`, {
     next: { revalidate: 10 },
-    headers: { lang: locale },
+    headers: { lang: getValidLocale(locale) },
   }).then((response) => {
     if (!response.ok) {
       throw new Error(`API Error [${response.status}] ${response.url}`);

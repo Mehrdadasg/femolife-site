@@ -1,4 +1,5 @@
 
+import { getValidLocale } from "@/shared/utils/locale";
 type DataType={
     Slug:string;
     Rate:number;
@@ -11,7 +12,7 @@ export async function addRate(data: DataType, locale: string = "en") {
 
   const response = await fetch(`${process.env.BASE_URL}/content/RateAdd`, {
     method: 'POST',
-    headers: { lang: locale },
+    headers: { lang:getValidLocale(locale)  },
     body: formData,
   });
 

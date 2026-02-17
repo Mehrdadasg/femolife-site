@@ -1,5 +1,5 @@
 import { AddMessage } from "@/shared/types/type";
-
+import { getValidLocale } from "@/shared/utils/locale";
 export async function addMessage(data: AddMessage, locale: string = "en") {
   const formData = new FormData();
   formData.append('Name', data.Name);
@@ -8,7 +8,7 @@ export async function addMessage(data: AddMessage, locale: string = "en") {
 
   const response = await fetch(`${process.env.BASE_URL}/content/ContactAdd`, {
     method: 'POST',
-    headers: { lang: locale },
+    headers: { lang: getValidLocale(locale) },
     body: formData,
   });
 

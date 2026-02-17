@@ -1,4 +1,6 @@
 import { AddComment } from "@/shared/types/type";
+import { getValidLocale } from "@/shared/utils/locale";
+
 
 export async function addComment(data: AddComment, locale: string = "en") {
   const formData = new FormData();
@@ -9,7 +11,7 @@ export async function addComment(data: AddComment, locale: string = "en") {
 
   const response = await fetch(`${process.env.BASE_URL}/content/CommentAdd`, {
     method: 'POST',
-    headers: { lang: locale },
+    headers: { lang: getValidLocale(locale) },
     body: formData,
   });
 
