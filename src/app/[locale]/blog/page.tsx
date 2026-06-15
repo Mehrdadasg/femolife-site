@@ -56,7 +56,7 @@ export default async function BlogMainPage({ searchParams, params }: BlogPagePro
           </span>
           <p className="font-bold text-2xl">{t("chooseCategory")}</p>
         </section>
-        <CategoriesListClient categories={categories} currentCategory="" />
+        <CategoriesListClient categories={categories} currentCategory="" locale={locale}/>
         <section className="flex items-center gap-3">
           <span className="hidden sm:flex size-[44px] bg-orange-50 rounded-full justify-center items-center">
             <Image src="/fire.png" className="w-[19px] h-[23px]" width={19} height={23} alt="" />
@@ -65,7 +65,7 @@ export default async function BlogMainPage({ searchParams, params }: BlogPagePro
         </section>
         <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
           {blogList?.Items?.map((article) => (
-            <ArticleCard key={article.Id} article={article} />
+            <ArticleCard key={article.Id} article={article} locale={locale} />
           ))}
         </section>
         <section className="mt-5">

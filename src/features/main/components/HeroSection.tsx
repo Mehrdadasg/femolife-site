@@ -19,7 +19,7 @@ async function HeroSection({ locale }: { locale: string }) {
             {t("everyWoman")}{" "}<strong className="font-bold text-pink-500">{t("health")}</strong>
           </p>
           <p className="text-center md:text-start text-[13px] md:text-base xl:text-lg text-gray-600">{heroData?.Content?.HtmlContent}</p>
-          <div className="flex justify-center my-10"><Image src="/install.png" width={190} height={80} alt={t("installCount")} /></div>
+         
           <AppDownload locale={locale} />
         </section>
         <section className="md:w-1/2 mt-5 md:mt-0 flex justify-center items-start">

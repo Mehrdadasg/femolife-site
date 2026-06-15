@@ -1,25 +1,33 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Glass2 } from "../../icons/Glass2";
 import { Article } from "@/shared/types/type";
 
+
 interface FeaturedArticleProps {
   article: Article;
   view?: "horizontal" | "vertical";
   seoTag?: "h2" | "h3";
+  locale?: string;
 }
 
 const ArticleCard: React.FC<FeaturedArticleProps> = ({
   article,
   view = "vertical",
   seoTag,
+  locale = "en",
 }) => {
+
+  
+  const href = locale === "ar" ? `/ar/${article?.Slug}` : `/${article?.Slug}`;
+
   return (
     <article
       className={`${view === "horizontal" ? "flex gap-2 sm:block" : "block"}`}
     >
-      <Link href={`/${article?.Slug}`} title={article?.Title ?? "تصویر پست"} className="block">
+      <Link href={href} title={article?.Title ?? "تصویر پست"} className="block">
         <Image
           src={article?.ImageUrl ?? "/post.png"} 
           width={684}
@@ -46,7 +54,7 @@ const ArticleCard: React.FC<FeaturedArticleProps> = ({
             <Glass2 height={8} width={23} />
           </div>
         </div>
-        <Link href={`/${article?.Slug}`} title={article?.Title??""} className="block text-lg font-semibold mt-3 truncate">
+        <Link href={href} title={article?.Title??""} className="block text-lg font-semibold mt-3 truncate">
         {article?.Title}
         </Link>
         <p className="text-gray-500 mt-2 text-sm line-clamp-2">
@@ -55,7 +63,7 @@ const ArticleCard: React.FC<FeaturedArticleProps> = ({
       </section>
       <section className="md:hidden">
         <div className="flex items-center gap-1 mt-3">
-          <Link href={`/${article?.Slug}`} title={article?.Title??""} className="block flex-grow">
+          <Link href={href} title={article?.Title??""} className="block flex-grow">
             {seoTag === "h2" ? (
               <h2
                 className={`text-[13px] font-bold  ${

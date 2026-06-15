@@ -13,6 +13,7 @@ interface BreadcrumbProps {
   linkClassName?: string;
   textClassName?: string;
   seperatorClassName?: string;
+  locale?: string;
 }
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({
@@ -21,8 +22,13 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
   containerClassName = "",
   linkClassName = "",
   textClassName = "",
-  seperatorClassName = "",
+  seperatorClassName = "", 
+  locale = "en",
 }) => {
+
+  const localizeHref = (href?: string) =>
+  href ? (locale === "ar" ? `/ar${href}` : href) : undefined;
+
   return (
     <nav
       className={`breadcrumb-container ${containerClassName}`}
@@ -33,7 +39,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
           <li key={index}>
             {item?.href ? (
               <Link
-                href={item?.href}
+                href={localizeHref(item?.href)!}
                 title={item?.label}
                 className={`breadcrumb-link ${linkClassName}`} 
               >

@@ -57,7 +57,7 @@ async function CategoryPage({ params, searchParams }: BlogPageProps) {
         <span className="size-11 flex justify-center items-center bg-lake-blue-50 rounded-full"><Image src="/glass.png" width={24} height={24} alt="glass" /></span>
         <p className="font-bold text-2xl">{t("chooseCategory")}</p>
       </section>
-      <CategoriesListClient categories={categories} currentCategory="" />
+      <CategoriesListClient categories={categories} currentCategory="" locale={locale} />
       <section className="flex items-center gap-3">
         <span className="hidden sm:flex size-[44px] bg-orange-50 rounded-full justify-center items-center"><Image src="/fire.png" className="w-[19px] h-[23px]" width={19} height={23} alt="" /></span>
         <h1 className="text-[22px] sm:text-2xl font-semibold sm:font-bold">{tc("latestArticlesIn", { category: selectedCategory?.Title ?? "" })}</h1>

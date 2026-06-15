@@ -37,7 +37,7 @@ async function BlogDetails({ params }: { params: Promise<{ blogSlug: string; loc
     <>
       <JsonLd json={seoData?.Data?.JsonLd} />
       <main className="w-full px-5 xl:px-0 max-w-7xl 2xl:max-w-[1366px] mx-auto py-24 md:py-28 lg:py-36 xl:py-40">
-        <BlogHero blogHeroData={blog?.Content} />
+        <BlogHero blogHeroData={blog?.Content} locale={locale} />
         <BlogContent blog={blog} />
         <RelatedBlog slug={blogSlug} locale={locale} />
       </main>

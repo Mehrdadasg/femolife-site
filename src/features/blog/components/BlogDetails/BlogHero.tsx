@@ -12,7 +12,7 @@ type BlogHeroProps = {
   AuthorSlug: string; VisitedCount: number; CommentCount: number; Rate: number;
 };
 
-function BlogHero({ blogHeroData }: { blogHeroData: BlogHeroProps }) {
+function BlogHero({ blogHeroData, locale  }: { blogHeroData: BlogHeroProps ; locale: string }) {
   const t = useTranslations("blogPage");
   const tc = useTranslations("common");
   const breadcrumbItems = [
@@ -22,10 +22,12 @@ function BlogHero({ blogHeroData }: { blogHeroData: BlogHeroProps }) {
     { label: blogHeroData?.Title },
   ];
 
+
+
   return (
     <section className="flex gap-5 flex-col sm:flex-row">
       <section className="md:w-1/2">
-        <Breadcrumb items={breadcrumbItems} separator="/" linkClassName="text-lake-blue-600 text-xs" textClassName="text-lake-blue-600 text-xs" seperatorClassName="text-gray-200" />
+        <Breadcrumb locale={locale}  items={breadcrumbItems} separator="/" linkClassName="text-lake-blue-600 text-xs" textClassName="text-lake-blue-600 text-xs" seperatorClassName="text-gray-200" />
         <h1 className="text-[22px] lg:text-4xl xl:text-5xl xl:leading-[80px] my-5"><b>{blogHeroData?.Title}</b></h1>
         <div className="bg-gray-100 rounded-[25px] flex gap-1 items-center w-max py-2 px-3">
           <Timer1 size={20} color="var(--color-gray-400)" />
