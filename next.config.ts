@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   env: {
     BASE_URL: process.env.BASE_URL || "https://web.femolife.app/api/v1.0",
   },
+  output: 'standalone',
   images: {
     unoptimized: true,
     remotePatterns: [
